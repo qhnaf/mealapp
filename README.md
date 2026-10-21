@@ -8,7 +8,7 @@ One of my early Flask builds, kept around so the distance between then and now s
 
 ## 🚀 Live Demo
 
-**[mealapp.vercel.app](https://mealapp.vercel.app/)**
+**[mealapp-one.vercel.app](https://mealapp-one.vercel.app/)**
 
 ---
 
