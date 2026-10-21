@@ -2,7 +2,7 @@
 
 > A recipe browser built with Flask and jQuery. Pick a category, browse the meals, open one for the full recipe and a cooking video.
 
-This started as a university coding test. I keep it around to see how far I've come since.
+One of my early Flask builds, kept around so the distance between then and now stays measurable.
 
 ---
 
@@ -78,6 +78,6 @@ Then open `http://localhost:5000`.
 
 ## 📜 History
 
-Built as a university assessment project using Flask, jQuery, AJAX, and Git/GitHub.
+Built as a project test using Flask, jQuery, AJAX, and Git/GitHub.
 
 I keep it in my portfolio as a marker of where I started: a small server-rendered app that talks to a public API from the browser. My later projects moved to React with a proper build step, so the distance between this and today's work is easy to measure.
