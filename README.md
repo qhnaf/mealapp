@@ -1,23 +1,83 @@
-**Deploy Website mealapp by ahnaf bisa dicek sini, semoga anda suka! : https://mealapp-byahnaf.glitch.me/**
+# 🍽 MealApp
 
-Halo!, perkenalkan nama saya Ahnaf Bhamakerti Arief ini adalah sebuah panduan untuk Running Project saya. 
+> A recipe browser built with Flask and jQuery. Pick a category, browse the meals, open one for the full recipe and a cooking video.
 
-**Langkah - langkah untuk running project**
-1. Buka terminal VSCode atau terminal pilihan Anda dan arahkan ke path folder proyek Anda. Instal library yang diperlukan dengan menjalankan perintah berikut: pip install flask requests. 
-(Ini penting, terutama jika Anda baru pertama kali menggunakan Flask. Lakukan instalasi meskipun Anda telah melakukannya sebelumnya.)
+This started as a university coding test. I keep it around to see how far I've come since.
 
-2. Setelah library terinstal, jalankan file app.py dengan perintah berikut: python app.py
+---
 
-3. Jika eksekusinya berhasil, Anda akan melihat URL lokal yang disediakan. Klik pada URL atau gunakan CTRL + klik untuk langsung membuka website Anda.
+## 🚀 Live Demo
 
-Dengan mengikuti langkah-langkah ini, website Anda akan berjalan dengan baik di mesin lokal Anda. Jika Anda mengalami masalah, pastikan instalasi library yang diperlukan dan eksekusi file app.py berjalan dengan benar.
+**[mealapp.vercel.app](https://mealapp.vercel.app/)**
 
-<!-- SIDENOTE -->
-**Fitur-fitur yang Digunakan**
-Untuk menyelesaikan tes project ini saya menggunakan fitur - fitur sebagai berikut:
-1. Flask
-2. HTML/CSS
-3. jQuery
-4. AJAX
-5. Git/Github
-6. Visual Studio Code
+---
+
+## ✨ Features
+
+- **Category grid** — 14 meal categories pulled from TheMealDB
+- **Filtered listing** — meals within a selected category
+- **Recipe detail** — ingredients, instructions, area of origin, and an embedded YouTube cooking video
+- **Server-rendered pages** — three routes, no client-side router
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Backend | Flask |
+| Frontend | HTML / CSS |
+| Interactivity | jQuery + AJAX |
+| Data | [TheMealDB](https://www.themealdb.com/api.php) (public API) |
+| Icons | Font Awesome 5 |
+| Hosting | Vercel |
+
+---
+
+## 📁 Project Structure
+
+```
+mealapp/
+├── app.py                    # Flask routes (3 endpoints)
+├── public/
+│   └── static/
+│       └── style.css
+├── templates/
+│   ├── index.html            # category grid
+│   ├── detail.html           # meals in a category
+│   └── meal_detail.html      # full recipe + video
+└── requirements.txt
+```
+
+The backend only renders templates. Every API call happens in the browser through jQuery, which is why there is no database and no server-side secrets.
+
+---
+
+## 🏁 Getting Started
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run the development server
+python app.py
+```
+
+Then open `http://localhost:5000`.
+
+---
+
+## ⚠️ Known Limitations
+
+- Written in the jQuery era — no build step, no components, no state management
+- No search, no pagination, no favourites
+- TheMealDB is rate-limited and occasionally returns incomplete recipes
+- Not optimised for very small screens
+
+---
+
+## 📜 History
+
+Built as a university assessment project using Flask, jQuery, AJAX, and Git/GitHub.
+
+I keep it in my portfolio as a marker of where I started: a small server-rendered app that talks to a public API from the browser. My later projects moved to React with a proper build step, so the distance between this and today's work is easy to measure.
